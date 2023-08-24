@@ -25,7 +25,7 @@ usercaption_position = Var.CAPTION_POSITION
 caption_position = usercaption_position.lower()
 caption_text = """<i><b>{}</b></i>\n\n<b>➠Fast Download Link :</b>\n<i><b>{}</b></i></b>"""
 
-@StreamBot.on_message((filters.regex("login🔑") | filters.command("login")) & ~filters.edited, group=4)
+@StreamBot.on_message((filters.regex("login🔑") | filters.command("login")) , group=4)
 async def login_handler(c: Client, m: Message):
     try:
         try:
